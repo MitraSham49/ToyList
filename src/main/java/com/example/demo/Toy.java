@@ -17,6 +17,12 @@ public class Toy implements Serializable {
     private boolean inStock;
 
 
+    public Toy(String toyDateOfMade, boolean toyInStock){
+        this.toyDateOfMade = toyDateOfMade;
+        this.toyInStock= toyInStock;
+    }
+
+
     public long getId() {
         return id;
     }
