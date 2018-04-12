@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/add" method="post" th:object="${theToy}">
+    <label for="brand"></label>Enter Brand<input type="text" th:field="*{brand}">
+    <label for="model"></label>Enter Model<input type="text" th:field="*{model}">
+    <button type="submit">Add device</button>
+</form>
+</body>
+</html>
